@@ -1,0 +1,22 @@
+{
+  "collections": [
+    {
+      "collection": "lesson-course-packages",
+      "description": "课程包集合",
+      "indexes": []
+    },
+    {
+      "collection": "lesson-records",
+      "description": "学时记录集合",
+      "indexes": [
+        {
+          "IndexName": "record_date",
+          "MgoKeySchema": {
+            "MgoIndexKeys": [{"Name": "recordDate", "Direction": "-1"}],
+            "MgoIsUnique": false
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": "课程学时"
+      }
+    },
+    {
+      "path": "pages/coursePackage/index",
+      "style": {
+        "navigationBarTitleText": "课程包管理"
+      }
+    },
+    {
+      "path": "pages/coursePackage/add",
+      "style": {
+        "navigationBarTitleText": "添加课程包"
+      }
+    },
+    {
+      "path": "pages/record/index",
+      "style": {
+        "navigationBarTitleText": "学时登记"
+      }
+    },
+    {
+      "path": "pages/record/edit",
+      "style": {
+        "navigationBarTitleText": "编辑记录"
+      }
+    },
+    {
+      "path": "pages/history/index",
+      "style": {
+        "navigationBarTitleText": "历史记录"
+      }
+    },
+    {
+      "path": "pages/settings/index",
+      "style": {
+        "navigationBarTitleText": "设置"
+      }
+    },
+    {
+      "path": "pages/payment/index",
+      "style": {
+        "navigationBarTitleText": "费用记录"
+      }
+    },
+    {
+      "path": "pages/payment/add",
+      "style": {
+        "navigationBarTitleText": "添加支付"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "课程学时登记",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/home.svg",
+        "selectedIconPath": "static/tabbar/home-active.svg"
+      },
+      {
+        "pagePath": "pages/coursePackage/index",
+        "text": "课程包",
+        "iconPath": "static/tabbar/package.svg",
+        "selectedIconPath": "static/tabbar/package-active.svg"
+      },
+      {
+        "pagePath": "pages/history/index",
+        "text": "记录",
+        "iconPath": "static/tabbar/history.svg",
+        "selectedIconPath": "static/tabbar/history-active.svg"
+      },
+      {
+        "pagePath": "pages/settings/index",
+        "text": "设置",
+        "iconPath": "static/tabbar/settings.svg",
+        "selectedIconPath": "static/tabbar/settings-active.svg"
+      }
+    ]
+  }
+}

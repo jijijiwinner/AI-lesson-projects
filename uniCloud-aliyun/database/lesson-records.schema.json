@@ -1,0 +1,62 @@
+{
+  "bsonType": "object",
+  "required": ["id", "packageId", "courseType", "courseName", "recordType", "recordDate"],
+  "permission": {
+    "read": true,
+    "create": true,
+    "update": true,
+    "delete": true
+  },
+  "properties": {
+    "_id": {
+      "description": "存储文档 ID（自动生成）"
+    },
+    "id": {
+      "bsonType": "string",
+      "description": "记录ID",
+      "label": "记录ID"
+    },
+    "packageId": {
+      "bsonType": "string",
+      "description": "课程包ID",
+      "label": "课程包ID"
+    },
+    "courseType": {
+      "bsonType": "string",
+      "description": "课程类型",
+      "label": "课程类型",
+      "enum": ["cognition", "sensory", "speech", "other"]
+    },
+    "courseName": {
+      "bsonType": "string",
+      "description": "课程名称",
+      "label": "课程名称"
+    },
+    "recordType": {
+      "bsonType": "string",
+      "description": "记录类型",
+      "label": "记录类型",
+      "enum": ["consume", "leave", "cancel"]
+    },
+    "consumeHours": {
+      "bsonType": "number",
+      "description": "消耗学时",
+      "label": "消耗学时"
+    },
+    "recordDate": {
+      "bsonType": "string",
+      "description": "记录日期",
+      "label": "记录日期"
+    },
+    "remark": {
+      "bsonType": "string",
+      "description": "备注",
+      "label": "备注"
+    },
+    "createTime": {
+      "bsonType": "string",
+      "description": "创建时间",
+      "label": "创建时间"
+    }
+  }
+}

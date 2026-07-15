@@ -1,0 +1,56 @@
+{
+  "bsonType": "object",
+  "required": ["id", "courseType", "courseName", "totalHours", "remainingHours", "purchaseDate"],
+  "permission": {
+    "read": true,
+    "create": true,
+    "update": true,
+    "delete": true
+  },
+  "properties": {
+    "_id": {
+      "description": "存储文档 ID（自动生成）"
+    },
+    "id": {
+      "bsonType": "string",
+      "description": "课程包ID",
+      "label": "课程包ID"
+    },
+    "courseType": {
+      "bsonType": "string",
+      "description": "课程类型",
+      "label": "课程类型",
+      "enum": ["cognition", "sensory", "speech", "other"]
+    },
+    "courseName": {
+      "bsonType": "string",
+      "description": "课程名称",
+      "label": "课程名称"
+    },
+    "totalHours": {
+      "bsonType": "number",
+      "description": "总学时",
+      "label": "总学时"
+    },
+    "remainingHours": {
+      "bsonType": "number",
+      "description": "剩余学时",
+      "label": "剩余学时"
+    },
+    "purchaseDate": {
+      "bsonType": "string",
+      "description": "购买日期",
+      "label": "购买日期"
+    },
+    "createTime": {
+      "bsonType": "string",
+      "description": "创建时间",
+      "label": "创建时间"
+    },
+    "updateTime": {
+      "bsonType": "string",
+      "description": "更新时间",
+      "label": "更新时间"
+    }
+  }
+}
